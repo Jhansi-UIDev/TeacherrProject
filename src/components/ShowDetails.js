@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { ListGroup, ListGroupItem } from 'reactstrap';
-import {isEmpty} from "lodash";
-
+import { ListGroup, ListGroupItem, Table } from 'reactstrap';
 
 class ShowDetails extends Component {
     constructor(props){
@@ -37,8 +35,6 @@ class ShowDetails extends Component {
     render() {
         const { postsDetails, titleDetails } = this.state;
         
-        console.log(postsDetails);
-        console.log(titleDetails);
         return (
             <div>
                 
@@ -49,11 +45,32 @@ class ShowDetails extends Component {
                         
                         <ListGroup >
                                 <ListGroupItem onClick = {() => this.clickEvent(postsDetails.id)}>
-                                   {postsDetails.title}  <br/>
-                                   <b>{titleDetails.length && (postsDetails.id === titleDetails[0].id) ? JSON.stringify(titleDetails[0]) : null}</b>
+                                  <b>{postsDetails.title}  </b> <br/>
+                                  
+                                   {titleDetails.length && (postsDetails.id === titleDetails[0].id) ? 
+                      
+                                   <Table dark striped bordered hover>  
+                                        <thead>
+                                            <tr>
+                                                <th>UserId</th>
+                                                <th>Id</th>
+                                                <th>Title </th>
+                                                <th>Body </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>{ titleDetails[0].userId} </td>
+                                                <td>{ titleDetails[0].id} </td>
+                                                <td>{ titleDetails[0].title} </td>
+                                                <td>{ titleDetails[0].body} </td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </Table> 
+                                    : null}
+                                    
                                 </ListGroupItem>
-                               
-
                         </ListGroup>
                         
                     </div>
