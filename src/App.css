@@ -23,87 +23,58 @@
   color: #09d3ac;
 }
 
-/* .wrapper {
-  display: flex;  
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
-}
-
-.wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
-}
-
-.header {
-  background: tomato;
-}
-
-.footer {
-  background: lightgreen;
-}
-
-.main {
-  text-align: left;
-  background: deepskyblue;
-}
-
-.aside-1 {
-  background: gold;
-}
-
-.aside-2 {
-  background: hotpink;
-}
-
-@media all and (min-width: 600px) {
-  .aside { flex: 1 0 0; }
-}
-
-@media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
-  .aside-1 { order: 1; } 
-  .main    { order: 2; }
-  .aside-2 { order: 3; }
-  .footer  { order: 4; }
-} */
-
 body {
   padding: 2em; 
   margin: 0;
 }
 
 .container{
-  background-color: coral;
+  background-color: rgb(5, 177, 208);
 
 }
-
 
 .row1{
   font-weight: bold;
-  text-align: center;
-  padding: 100px;
-  
+  font-size:6 vw;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  margin:0px;
   flex: 1 100%;
+  flex-flow: row wrap;
+  background-color: deepskyblue;
+  height: 220px;
+  align-items: center;
+}
+
+@media all and (min-width: 600px) {
+  .url{
+    font-size: 30px;
+    padding-right: 253px;
+  } 
 }
 
 .row2{
-  background-color: rgb(236, 45, 134);
   color: rgb(81, 15, 136);
   display: flex;  
   flex-flow: row wrap;
   font-weight: bold;
-  text-align: center;
-  padding: 100px;
+  text-align: left;
+  
+  font-size: 2vw;
+  margin: 0px;
   flex: 1 100%;
   
 }
 
+.row2col1{
+  width: 1030px;
+  height: 200px;
+  background-color: rgb(21, 2, 29);
+}
 .row2col2{
   background-color: rgb(236, 45, 134);
   justify-content: center;
-  /*padding: 120px;
-  flex: 1 100%; */
 }
 
 .row3{
@@ -112,21 +83,38 @@ body {
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
-  padding: 100px;
+  padding: 0px;
+  margin: 0px;
   flex: 1 100%;
 }
 .row3col1{
   background-color: rgb(91, 5, 148);
+  width: 1030px;
+  height: 200px;
 }
+.row3col2
+.row3col3{
+  max-width: 100%;
+  height: auto;
+    padding: 0px;
+    height: fit-content;
+  
+ 
+}
+
 .row4{
-   
-  background-color: rgb(218, 193, 54);
+  max-height: 680px;
+  height: fit-content;
+  padding: 20px;
+  background-color: rgb(228, 226, 218);
   display: flex;  
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
-  padding: 100px;
+  margin:0 px;
   flex: 1 100%;
+  justify-content: inherit;
+  font-size: 4 vw;
   
 }
 
@@ -147,7 +135,5 @@ body {
 
 .inline-block{
   display: inline-block;
-  width: 500px;
-  height: 192px;
   text-align: left;
 }
