@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: rgb(239, 241, 200);
+
+ /* background-color: rgb(239, 241, 200); */
 }
 
 .App-logo {
@@ -20,4 +21,133 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+/* .wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+} */
+
+body {
+  padding: 2em; 
+  margin: 0;
+}
+
+.container{
+  background-color: coral;
+
+}
+
+
+.row1{
+  font-weight: bold;
+  text-align: center;
+  padding: 100px;
+  
+  flex: 1 100%;
+}
+
+.row2{
+  background-color: rgb(236, 45, 134);
+  color: rgb(81, 15, 136);
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  padding: 100px;
+  flex: 1 100%;
+  
+}
+
+.row2col2{
+  background-color: rgb(236, 45, 134);
+  justify-content: center;
+  /*padding: 120px;
+  flex: 1 100%; */
+}
+
+.row3{
+  background-color: rgb(94, 209, 28);
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  padding: 100px;
+  flex: 1 100%;
+}
+.row3col1{
+  background-color: rgb(91, 5, 148);
+}
+.row4{
+   
+  background-color: rgb(218, 193, 54);
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  padding: 100px;
+  flex: 1 100%;
+  
+}
+
+.aside{
+  display: flex;
+  flex-direction:row;
+}
+
+.chevron-style{
+  color: white;
+  font-size: 30px;
+  position: relative;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.inline-block{
+  display: inline-block;
+  width: 500px;
+  height: 192px;
+  text-align: left;
 }
